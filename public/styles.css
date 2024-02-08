@@ -9,7 +9,7 @@
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: url(/images2/tulipsbg4.jpg);
+  background-image: url(./images2/tulipsbg4.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -18,7 +18,7 @@
 .headering {
   min-height: 100vh;
   width: 100%;
-  background-image: url(/images2/retro4.jpg);
+  background-image: url(./images2/retro4.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -27,7 +27,7 @@
 .headerer {
   min-height: 100vh;
   width: 100%;
-  background-image: url(/images2/retro3.jpg);
+  background-image: url(./images2/retro3.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -36,7 +36,7 @@
 .headerine {
   min-height: 100vh;
   width: 100%;
-  background-image: url(/images2/retro5.jpg);
+  background-image: url(./images2/retro5.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -258,7 +258,7 @@ h3 {
 .head {
   min-height: 100vh;
   width: 100%;
-  background-image: url(/images2/tulipsbg3\(copy\).jpg);
+  background-image: url(./images2/tulipsbg3\(copy\).jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -304,7 +304,7 @@ input[type="submit"]:hover {
 .headers {
   min-height: 100vh;
   width: 100%;
-  background-image: url(/images/paul-bulai-LflITYXORiQ-unsplash.jpg);
+  background-image: url(./images/paul-bulai-LflITYXORiQ-unsplash.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
