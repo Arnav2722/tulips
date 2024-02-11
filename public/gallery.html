@@ -1,77 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery@Tulips</title>
-    <link rel="icon" type="image/x-icon" href="./images2/TULIPS.png">
-    <link rel="stylesheet" href="./styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <section class="headerine">
-        <nav>
-            <a href="index.html"><img src="./images2/TULIPS.png" class="logo"></a>
-            <div class="nav-links" id="navLinks">
-                <ul>
-                    <li><a href="index.html" style="font-size:1.5rem; font: weight 500px;">Home</a></li>
-                    <li><a href="about.html" style="font-size:1.5rem;  font: weight 500px;">About</a></li>
-                    <li><a href="events.html" style="font-size:1.5rem; font: weight 500px;">Events</a></li>
-                    <li><a href="gallery.html" style="font-size:1.5rem; font: weight 500px;">Gallery</a></li>
-                    <li><a href="contact.html" style="font-size:1.5rem; font: weight 500px;">Contact Us</a></li>
-                </ul>
+    <section style="height: fit-content;width: fit-content;">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./public/gallery@tulips/53503325877_1a915d90d0_o.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./public/gallery@tulips/53503326097_896e221e4e_o.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./public/gallery@tulips/53504209866_e382591665_o.jpg" class="d-block w-100" alt="...">
+                </div>
             </div>
-        </nav>
-        <div class="carousl">
-            <img src="./gallery@tulips/53503325877_1a915d90d0_o.jpg" alt="">
-            <img src="./gallery@tulips/53503326097_896e221e4e_o.jpg" alt="">
-            <img src="./gallery@tulips/53504209866_e382591665_o.jpg" alt="">
-            <img src="./gallery@tulips/53504210006_dd95f13aac_o.jpg" alt="">
-            <img src="./gallery@tulips/53504360138_df5bb656a6_o.jpg" alt="">
-            <img src="./gallery@tulips/53504360253_f148bc91ed_o.jpg" alt="">
-            <img src="./gallery@tulips/53504360518_ef6091535e_o.jpg" alt="">
-            <img src="./gallery@tulips/53504517864_6719b72cf4_o.jpg" alt="">
-            <img src="./gallery@tulips/53504518004_dbab566f6b_o.jpg" alt="">
-            <img src="./gallery@tulips/53504518169_969c5bb782_o.jpg" alt="">
-            <img src="./gallery@tulips/53504634710_db39000777_o.jpg" alt="">
-            <!-- <img src="/gallery@tulips" alt="">
-            <img src="/gallery@tulips" alt="">
-            <img src="/gallery@tulips" alt=""> -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
-    <footer class="footer">
-        <p style="color: #ffffff;">&copy;Copyright 2023</p>
-        <a href="https://www.facebook.com/" class="fa fa-facebook" style="color: #ffffff;"></a>
-        <a href="https://twitter.com/home" class="fa fa-twitter" style="color: #ffffff;"></a>
-        <a href="https://www.instagram.com/tulips_2k24/" class="fa fa-instagram" style="color: #ffffff;"></a>
-    </footer>
-
-    <script>
-        const carousel = document.querySelector(".carousel");
-        let isDown = false;
-        let startX;
-        let scrollLeft;
-        carousel.addEventListener("mousedown", (e) => {
-            isDown = true;
-            startX = e.pageX - caruosel.offsetLeft;
-            scrollLeft = carousel.scrollLeft
-        });
-
-        carousel.addEventListener("mouseleave", (e) => {
-            isDown = false;
-        });
-
-        carousel.addEventListener("mousemove", (e) => {
-            if (!isDown) return;
-            e.preventDefault();
-            const x = e.pageX - carousel.offsetLeft;
-            const walk = x - startX;
-            carousel.scrollLeft = scrollLeft - walk
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
